@@ -9,8 +9,6 @@ Post -> localhost:8000/api/shortener body request {"url" : "https://gist.github.
         
 Get -> localhost:8000/api/fXq3x redirect to the original url
 
-# Minimal Spring Boot sample app.
-
 # Requirements
 For building and running the application you need:
 

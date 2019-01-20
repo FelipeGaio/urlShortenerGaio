@@ -79,7 +79,7 @@ public class IDGenerator {
 
     public static Long createUniqueId() {
 		try {
-			return Math.abs(SecureRandom.getInstance("SHA1PRNG").nextLong());
+			return (long) Math.abs(SecureRandom.getInstance("SHA1PRNG").nextInt(100000000));
 		} catch (NoSuchAlgorithmException e) {
 			e.printStackTrace();
 		}

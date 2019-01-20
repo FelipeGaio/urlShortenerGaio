@@ -15,8 +15,6 @@ public class UrlEntity {
 	
 	private String key;
 	
-	private Long urlId;
-	
 	private String longUrl;
 	
 	private String shortenerUrl;
@@ -53,14 +51,6 @@ public class UrlEntity {
 
 	public void setDate(Date date) {
 		this.date = date;
-	}
-
-	public Long getUrlId() {
-		return urlId;
-	}
-
-	public void setUrlId(Long urlId) {
-		this.urlId = urlId;
 	}
 
 	public String getKey() {

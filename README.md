@@ -2,7 +2,7 @@ Assignment: URL Shortener
 
 Simple service which convert a long URL(https://gist.github.com/FylmTM/e3c4e5f337a176e94d6dd51703068925") into a short URL(http://gaio/fXq3x)
 
-Spring Boot 1.5.6 and H2 database all post operation is saved
+Spring Boot 1.5.6 and H2 database all post operation are saved
 
 Two rest operation
 

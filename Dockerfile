@@ -1,5 +1,5 @@
-FROM openjdk:8-jdk-alpine
+FROM java:8
 VOLUME /tmp
-ARG JAR_FILE
-COPY ${JAR_FILE} urlshortener-1.0-SNAPSHOT.jar
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/urlshortener-1.0-SNAPSHOT.jar"]
+ADD urlshortener-1.0-SNAPSHOT.jar app.jar
+RUN bash -c 'touch /app.jar'
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
